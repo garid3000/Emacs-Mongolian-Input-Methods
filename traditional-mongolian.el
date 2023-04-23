@@ -1,15 +1,12 @@
-;; Mongolian layout: Mongolian alphabet has 2 letters: Ө Ү,
-;; and the layout is quite different from other cyrillic layouts.
 ;; Written by Garid Zorigoo.
 (quail-define-package
  "traditional-mongolian" "Mongolian"  "MNS-" t
  "Input method for cyrillic Mongolian Scripts"
  nil t nil nil nil nil nil nil nil nil t)
 
-;;  №  -  "  ₮  :    .  _  ,  %  ?  е  щ
-;;   Ф  Ц  У  Ж  Э    Н  Г  Ш  Ү  З  К  Ъ
-;;    Й  Ы  Б  Ө  А    Х  Р  О  Л  Д  П
-;;     Я  Ч  Ё  С  М    И  Т  Ь  В  Ю
+;;   ᠣ  ᠸ  ᠡ  ᠷ  ᠲ    ᠶ  ᠦ  ᠢ  ᠢ  ᠥ  ᠫ
+;;    ᠠ  ᠰ  ᠳ  ᠹ  ᠭ    ᠬ  ᠵ  ᠺ  ᠯ  ;  ᠋
+;;     ᠽ  ᠱ  ᠴ  ᠤ  ᠪ    ᠨ  ᠮ  ᠂  ᠃  ·
 
 
 (quail-define-rules
@@ -25,20 +22,20 @@
 
 
  ;; (uppercase 1st row)
- ("Q" "\u1842")    ("E" "\u1827") ("R" "\u183f")     ("{" "\u3008") ("}" "\u3009")
+ ("Q" "\u1842") ("E" "\u1827") ("R" "\u183f") ("{" "\u3008") ("}" "\u3009")
  ;; (uppercase 2nd row)
- ("H" "\u183e")  ("K" "\u183b") ("L" "\u1840") (":" "\u1804") ("\"" "\u180c")
+ ("H" "\u183e") ("K" "\u183b") ("L" "\u1840") (":" "\u1804") ("\"" "\u180c")
  ;; (uppercase 3rd row)
- ("Z" "\u1841")  ("C" "\u183c")  ("N" "\u1829") ("<" "\u300a") (">" "\u300b") ("?" "\ufe16")
+ ("Z" "\u1841") ("C" "\u183c") ("N" "\u1829") ("<" "\u300a") (">" "\u300b") ("?" "\ufe16")
 
 
  ;;  (number row without shift)
- ("`" "\u180d")
- ("1" ?№) ("2" ?-) ("3" ?\") ("4" ?₮) ("5" ?:) ("6" ?.)
- ("7" ?_) ("8" ?,) ("9" ?%) ("0" ??) ("-" ?е) ("=" ?щ)
+ ("`" "\u180d") ("-" "\u202f")
+ ;; ("1" ?№) ("2" ?-) ("3" ?\") ("4" ?₮) ("5" ?:) ("6" ?.)
+ ;; ("7" ?_) ("8" ?,) ("9" ?%) ("0" ??) ("-" ?е) ("=" ?щ)
 
  ;;  (number row with shift)
  ("!" "\ufe15") ("@" "\u2048") ("#" "\u2049") ("^" "\u200c")
- ("&" "\u180a") ("*" "\u200d")                        ("_" "\u180e") ("+" "\ufe16")
+ ("&" "\u180a") ("*" "\u200d") ("_" "\u180e") ("+" "\ufe16")
 
  )
