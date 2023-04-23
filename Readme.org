@@ -1,0 +1,7 @@
+#+author: Garid Zorigoo
+#+date: [2023-04-24 Mon]
+#+startup: show2levels
+
+* Emacs Mongolian Input Methods:
+- Cyrillic Mongolian input method
+- Traditional Mongolian input method
